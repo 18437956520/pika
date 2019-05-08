@@ -14,7 +14,10 @@
             }
         }, 10)
     }
-    let code = `.preview {
+    let code = `
+      /*今天画一只可爱的皮卡丘*/
+      /*先准备皮卡丘的皮*/
+      .preview {
         border-top: 1px solid white;
         height: 100%;
         display: flex;
@@ -29,6 +32,7 @@
         position: relative;
       }
       
+      /*画一只鼻子*/
       .nose {
         width: 0px;
         height: 0px;
@@ -42,6 +46,7 @@
         margin-left: -12px;
       }
       
+      /*画两只大眼睛*/
       .eye {
         width: 49px;
         height: 49px;
@@ -51,6 +56,7 @@
         border: 2px solid #000000;
       }
       
+      /*瞳孔也给安排上*/
       .eye::before {
         content: '';
         display: block;
@@ -64,16 +70,19 @@
         border: 2px solid #000;
       }
       
+      /*左边一只*/
       .eye.left {
         right: 50%;
         margin-right: 90px;
       }
       
+      /*右边一只*/
       .eye.right {
         left: 50%;
         margin-left: 90px;
       }
       
+      /*画出两边的腮红*/
       .face {
         width: 68px;
         height: 68px;
@@ -84,16 +93,19 @@
         top: 85px;
       }
       
+      /*一样的 左边一个*/
       .face.left {
         right: 50%;
         margin-right: 116px;
       }
       
+      /*右边一个*/
       .face.right {
         left: 50%;
         margin-left: 116px;
       }
       
+      /*稍微复杂的来了 画它的嘴唇*/
       .upperLip {
         height: 20px;
         width: 80px;
@@ -103,6 +115,7 @@
         background: #FEE433;
       }
       
+      /*同样是左边一个*/
       .upperLip.left {
         right: 50%;
         border-bottom-left-radius: 40px 20px;
@@ -111,6 +124,7 @@
         transform: rotate(-17deg);
       }
       
+      /*右边一个*/
       .upperLip.right {
         left: 50%;
         border-bottom-right-radius: 40px 20px;
@@ -119,6 +133,7 @@
         transform: rotate(17deg);
       }
       
+      /*该收尾了 画一只嘴巴*/
       .lowerLip-wrapper {
         bottom: -27px;
         position: absolute;
@@ -129,6 +144,7 @@
         width: 300px;
       }
       
+      /*还有舌头*/
       .lowerLip {
         height: 3500px;
         width: 300px;
@@ -140,6 +156,7 @@
         overflow: hidden;
       }
       
+      /*结束*/
       .lowerLip::after {
         content: '';
         position: absolute;
@@ -150,6 +167,8 @@
         left: 50%;
         margin-left: -50px;
         border-radius: 50px;
+
+      /*好啦 这只萌萌的pikapika送给你*/
       }`
     writeCode('', code)
 }.call()
