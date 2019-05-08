@@ -44,7 +44,7 @@ body {
 }
 
 .actions>button {
-  background-color: #df1271;
+  background-color: #a8004f;
   color: white;
   border: none;
   border-radius: 3px;
@@ -55,10 +55,6 @@ body {
   transition: all 0.3s;
 }
 
-.actions>button:hover {
-  background-color: #ff0077;
-  border-radius: 8px;
-}
 
 .actions>button.active {
   background-color: #ff0077;
