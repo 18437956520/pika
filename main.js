@@ -1,21 +1,21 @@
-!function(){
-    function writeCode(prefix, code, fn){
+! function () {
+    function writeCode(prefix, code, fn) {
         let container = document.querySelector('#code')
         let styleTag = document.querySelector('#styleTag')
         let n = 0
-        let id = setInterval(()=>{
-            n+=1
-            
+        let id = setInterval(() => {
+            n += 1
+
             container.innerHTML = Prism.highlight(prefix + code.substring(0, n), Prism.languages.css)
-            styleTag.innerHTML = code.substring(0,n)
+            styleTag.innerHTML = code.substring(0, n)
             container.scrollTop = container.scrollHeight
-            if(n>=code.length){
+            if (n >= code.length) {
                 window.clearInterval(id)
                 fn && fn.call()
             }
-        },10)
+        }, 10)
     }
-    let code =`.preview {
+    let code = `.preview {
         border-top: 1px solid white;
         height: 100%;
         display: flex;
@@ -152,5 +152,5 @@
         margin-left: -50px;
         border-radius: 50px;
       }`
-    writeCode('',code)
+    writeCode('', code)
 }.call()

@@ -12,25 +12,25 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
   height: 100vh;
   border: 1px solid white;
 }
 
-.code-wrapper{
+.code-wrapper {
   flex: 1;
   height: 50%;
   padding: 10px;
 }
 
-.preview-wrapper{
+.preview-wrapper {
   flex: 1;
   height: 50%;
 }
 
-#code{
+#code {
   overflow: hidden;
   height: 100%;
 }
