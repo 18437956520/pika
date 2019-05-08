@@ -35,6 +35,36 @@ body {
   height: 100%;
 }
 
+.actions{
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.actions>button{
+  background-color: #df1271;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 5px 2px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
+}
+
+
+.actions>button:hover{
+  background-color: #ff0077;
+  border-radius: 8px;
+}
+.actions>button.active{
+  background-color: #ff0077;
+  border-radius: 8px;
+}
+
 .token.selector{
   color: #F9265F;
 }
