@@ -171,4 +171,13 @@
       /*好啦 这只萌萌的pikapika送给你*/
       }`
     writeCode('', code)
+
+    $('.actions').on('click', 'button', function(e){
+        let $button = $(e.currentTarget)
+        let speed = $button.attr('data-speed')
+        $button.addClass('active')
+            .siblings('.active').removeClass('active')
+    })
+
 }.call()
+
