@@ -1,23 +1,32 @@
-*{margin: 0; padding: 0; box-sizing: border-box;}
-*::after{
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-*::before{
+
+*::after {
   box-sizing: border-box;
 }
-body{
+
+*::before {
+  box-sizing: border-box;
+}
+
+.preview {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #FEE433;
 }
-.wrapper{
+
+.wrapper {
   width: 100%;
   height: 165px;
   position: relative;
 }
-.nose{
+
+.nose {
   width: 0px;
   height: 0px;
   border-style: solid;
@@ -29,7 +38,8 @@ body{
   top: 28px;
   margin-left: -12px;
 }
-.eye{
+
+.eye {
   width: 49px;
   height: 49px;
   background: #2E2E2E;
@@ -37,7 +47,8 @@ body{
   border-radius: 50%;
   border: 2px solid #000000;
 }
-.eye::before{
+
+.eye::before {
   content: '';
   display: block;
   width: 24px;
@@ -46,18 +57,21 @@ body{
   position: absolute;
   border-radius: 50%;
   left: 6px;
-  top:-1px;
+  top: -1px;
   border: 2px solid #000;
 }
-.eye.left{
+
+.eye.left {
   right: 50%;
   margin-right: 90px;
 }
-.eye.right{
+
+.eye.right {
   left: 50%;
   margin-left: 90px;
 }
-.face{
+
+.face {
   width: 68px;
   height: 68px;
   background: #FC0D1C;
@@ -66,15 +80,18 @@ body{
   position: absolute;
   top: 85px;
 }
-.face.left{
+
+.face.left {
   right: 50%;
   margin-right: 116px;
 }
-.face.right{
+
+.face.right {
   left: 50%;
   margin-left: 116px;
 }
-.upperLip{
+
+.upperLip {
   height: 20px;
   width: 80px;
   border: 2px solid black;
@@ -82,31 +99,34 @@ body{
   top: 50px;
   background: #FEE433;
 }
-.upperLip.left{
+
+.upperLip.left {
   right: 50%;
   border-bottom-left-radius: 40px 20px;
   border-top: none;
   border-right: none;
   transform: rotate(-17deg);
 }
-.upperLip.right{
+
+.upperLip.right {
   left: 50%;
   border-bottom-right-radius: 40px 20px;
   border-top: none;
   border-left: none;
   transform: rotate(17deg);
 }
-.lowerLip-wrapper{
+
+.lowerLip-wrapper {
   bottom: -27px;
   position: absolute;
   left: 50%;
   margin-left: -150px;
-  z-index: -1;
   height: 135px;
   overflow: hidden;
   width: 300px;
 }
-.lowerLip{
+
+.lowerLip {
   height: 3500px;
   width: 300px;
   background: #990513;
@@ -116,7 +136,8 @@ body{
   bottom: 0;
   overflow: hidden;
 }
-.lowerLip::after{
+
+.lowerLip::after {
   content: '';
   position: absolute;
   bottom: -20px;
